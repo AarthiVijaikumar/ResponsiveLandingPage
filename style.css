@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+}
+
+header {
+    margin: 70px;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+header ul li {
+    margin-top: 60px;
+
+
+}
+
+header ul li {
+    list-style: none;
+}
+
+header li a {
+
+    text-decoration: none;
+    list-style: none;
+    color: #838383;
+    font-weight: 200;
+}
+
+button {
+    background-color: #FF4E4E;
+    width: 120px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+
+button:hover {
+    box-shadow: 20px 20px 30px #d39292;
+}
+
+.heading {
+    position: absolute;
+    top: 150px;
+    left: 330px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.mainCardDiv {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 100px;
+    left: 330px;
+
+
+}
+
+.card {
+    box-shadow: 20px 20px 20px #E4E4E4;
+    height: 230px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+
+
+}
+
+.card:hover {
+    box-shadow: 20px 20px 20px #a8a7a7;
+}
+
+.text {
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bolder;
+
+}
+
+.cardImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.sideContent {
+    max-width: 300px;
+    position: absolute;
+    top: 150px;
+    right:220px;
+    color: #838383;
+
+
+}
+
+.toggle {
+    display: none;
+}
+
+#cart {
+    display: none;
+}
+
+
+
+@media (max-width: 360px) {
+    body {
+        margin-right: 20px;
+    }
+
+    header span {
+        display: none;
+
+    }
+
+    header h1 {
+        position: relative;
+        left: 40px;
+        bottom: 40px;
+        width: 60px;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 50px;
+    }
+
+    header ul {
+        display: none;
+
+    }
+
+    header button {
+        display: none;
+    }
+
+    .toggle {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        color: #FF4E4E;
+    }
+
+    header img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #cart {
+        display: block;
+        color: #FF4E4E;
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .heading {
+        font-size: 21px;
+        letter-spacing: 3px;
+        width: 350px;
+        position: absolute;
+        left: 20px;
+
+    }
+
+    .mainCardDiv {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 100px;
+        width: 400px;
+        flex-wrap: wrap;
+        top: 300px;
+        left: 0px;
+ 
+    }
+
+    .sideContent {
+        margin-bottom: 20px;
+        position: absolute;
+        top: 1050px;
+        width: 300px;
+        left: 0px;
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+
+    .card {
+        box-shadow: 20px 20px 20px #e4e4e4;
+        height: 230px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*nav section*/
+
+    header ul.navigation.active {
+
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+    }
+}

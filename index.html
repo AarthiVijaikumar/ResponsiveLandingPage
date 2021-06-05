@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkoop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!--nav section-->
+  
+    <span id="cart"><i class='bx bxs-cart-alt'></i></span>
+    <header>
+      
+      <h1>Lorem<br/><span style="font-family: 'Abril Fatface', cursive;">ipsum</span></h1>
+      
+             
+        <div class="toggle" onclick="toggleMenu();"><img src="https://image.flaticon.com/icons/png/128/812/812847.png" alt=""></div>
+        <ul class="navigation">
+          <li>
+            <a href="#">
+              <span style="color: #ff4e4e; text-decoration: line-through">
+              <span style="color: #838383">About</span></span>
+              </a>
+            
+          </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Cuisine</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Book</a></li>
+        </ul>
+        <br />
+        <button class="button">Cart</button>
+      
+    </header>
+
+    <!--Content section -->
+    <section class="content">
+      <div class="heading">
+        <h1>
+          What are you <br />
+          having for Lunch ?
+        </h1>
+      </div>
+      <div class="mainCardDiv">
+        <div class="card">
+          <img class="cardImg"
+            src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-400,h-300,fo-auto"
+            alt="Mexican Taco"
+          /><br>
+          <div class="text">
+            <h4><b>Mexican Taco</b></h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="cardImg"
+            src="https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/31605866549922.jpg"
+            alt="Farmhouse Pizza"
+          />
+          <div class="text">
+            <h4><b>Farmhouse Pizza</b></h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="cardImg"
+            src="https://www.familyfoodonthetable.com/wp-content/uploads/2016/05/Cheddar-chicken-burgers-3-720x540.jpg"
+            alt="Chicken Burger"
+          />
+          <div class="text">
+            <h4><b>Chicken Burger</b></h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="cardImg"
+            src="https://d28niecfu6trh0.cloudfront.net/c28956f2dc2fcd1553081b5d8e544b89@2x.jpg"
+            alt="Loaded Nachos"
+          />
+          <div class="text">
+            <h4><b>Loaded Nachos</b></h4>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="cardImg"
+            src="https://thebellyrulesthemind.net/wp-content/uploads/2020/12/hakka-noodles-1.jpg"
+            alt="Hakka Noodles"
+          />
+          <div class="text">
+            <h4><b>Hakka Noodles</b></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--side content-->
+    <div class="sideContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            Vero consectetur repudiandae error explicabo incidunt.
+        
+      </p><br>
+        <hr size=3 style="width:70px;height:3px;background-color: #ff4e4e;border: none;">
+    </div>
+    <script type="text/javascript">
+        function toggleMenu()
+        {
+          var menu=document.querySelector('.toggle');
+          var navigation=document.querySelector('.navigation');
+          menu.classList.toggle('active');
+          navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
